@@ -1,0 +1,109 @@
+1)
+a)
+public class Professor {
+
+	private String nome;
+	private int idade;
+
+	public Pofessor(String n, int i ) {
+		nome = n;
+		idade = i;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+	public int getIdade() {
+		return idade;
+	}
+
+	public void setNome(String n) {
+		nome = n;
+	}
+	public void setIdade(int i) {
+		idade = i;
+	}
+	
+}
+
+b)
+public class Disciplina {
+
+	private String nome;
+	private boolean pratica;
+
+	public Pofessor(String n, int p ) {
+		nome = n;
+		pratica = p;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+	public boolean getPratica() {
+		return pratica;
+	}
+
+	public void setNome(String n) {
+		nome = n;
+	}
+	public void setPratica(boolean p) {
+		pratica = p;
+	}
+	
+}
+
+c)
+public class Atribucao {
+
+	private Professor professor;
+	private Discipliina disciplina;
+
+	public Pofessor(Professor professor, Discipliina disciplina ) {
+		professor = p;
+		disciplina = d;
+	}
+
+	public Professor getProfessor() {
+		return professor;
+	}
+	public Discipliina getDisciplina() {
+		return disciplina;
+	}
+
+	public void setProfessor(Professor p) {
+		professor = p;
+	}
+	public void setDisciplina(Discipliina d) {
+		disciplina = d;
+	}
+	
+}
+
+
+d)
+import javax.swing.JOptionPane;
+public class TesteAtribuicao {
+
+	public static void main (String [ ] args){
+		Professor professore = JOptionPane.showInputDialog (“Professor:”);
+		Disciplina disciplina = JOptionPane.showInputDialog (“Disciplina:”);
+		Atribuicao atribuicao = JOptionPane.showInputDialog (“Atribuição:”);
+
+		Professor professor = new Professor (nome, idade);
+		Disciplina disciplina = JOptionPane.showInputDialog (“Qual a disciplina?”);
+		Atribuicao atribuicao = JOptionPane.showInputDialog (“Qual a atribuicao?”));
+		
+		Disciplina d = new Disciplina ( );
+
+	}
+
+}
+
+
+
+
+
+
+
+
